@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clock</title>
+        <link rel="stylesheet" href="./Styles/mainstyle.css">
+    </head>
+<body>
+    <div class="main">
+        <div class="settings">
+            <h4>Select Color for clock:</h4>
+            <select id="colorselector">
+                <option>Black</option>
+                <option>White</option>
+                <option>White4</option>
+                <option>White645</option>
+            </select>
+            <h4>Select Shape:</h4>
+            <p>
+                Square <input type="radio" name="shapeselector" data-clock-shapeselector="Square"><br>
+                Round <input type="radio" name="shapeselector" data-clock-shapeselector="Round"><br>
+            </p>
+            
+            <h4>Select Color for Hour:</h4>
+            <input type="color" id="colorforhour"> <button onclick="fun1()">Reset</button>
+
+            <h4>Select Color for Minute:</h4>
+            <input type="color" id="colorforminute"> <button onclick="fun2()">Reset</button>
+
+            <h4>Select Color for Second:</h4>
+            <input type="color" id="colorforsecond"> <button onclick="fun3()">Reset</button>
+            
+            <h4>Select Size for Hour:</h4>
+            <p id="p1">Normal : </p><input type="range" id="sizeforhour" step="1" max="4" min="1" value="2"> <button onclick="fun4()">Reset</button>
+
+            <h4>Select Size for Minute:</h4>
+            <p id="p2">Normal : </p><input type="range" id="sizeforminute" step="1" max="4" min="1" value="2"> <button onclick="fun5()">Reset</button>
+
+            <h4>Select Size for Second:</h4>
+            <p id="p3">Normal : </p><input type="range" id="sizeforsecond" step="1" max="4" min="1" value="2"> <button onclick="fun6()">Reset</button>
+
+
+
+
+        </div>
+        <div class="clockpreview">
+            <div class="hours" id="hours"></div>
+            <div class="minutes" id="minutes"></div>
+            <div class="seconds" id="seconds"></div>
+        </div>
+    </div>
+    
+    <script src="./mainscript.js"></script>
+</body>
+</html>

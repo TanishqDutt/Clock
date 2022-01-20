@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --startH: 0deg;
+    --endH: 360deg;
+    --startM: 0deg;
+    --endM: 360deg;
+    --startS: 0deg;
+    --endS: 360deg;
+}
+
+div.main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100vh;
+}
+
+div.main div.clockpreview{
+    position: relative;
+    justify-self: center;
+    width: 50vh;
+    height: 50vh;
+    background-image: url(/Assets/Clock_WithNum_Black_Square.png);
+    background-size: cover;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.main div.clockpreview div.hours{
+    position: absolute;
+    height: 20%;
+    width: 1%;
+    background-color: #ffffff;
+    top:30%;
+    transform-origin: bottom;
+}
+div.main div.clockpreview div.minutes{
+    position: absolute;
+    height: 30%;
+    width: 1%;
+    background-color: #e9c4c4;
+    top:20%;
+    transform-origin: bottom;
+}
+div.main div.clockpreview div.seconds{
+    position: absolute;
+    height: 25%;
+    width: 0.5%;
+    background-color: #bafff9;
+    top: 25%;
+    transform-origin: bottom;
+}
+
