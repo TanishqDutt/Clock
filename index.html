@@ -14,15 +14,17 @@
             <select id="colorselector">
                 <option>Black</option>
                 <option>White</option>
-                <option>White4</option>
-                <option>White645</option>
             </select>
             <h4>Select Shape:</h4>
             <p>
-                Square <input type="radio" name="shapeselector" data-clock-shapeselector="Square"><br>
+                Square <input type="radio" name="shapeselector" data-clock-shapeselector="Square" checked><br>
                 Round <input type="radio" name="shapeselector" data-clock-shapeselector="Round"><br>
             </p>
-            
+            <h4>Select Whether Numbers to be shown or not</h4>
+            <p>
+                There will be numbers <input type="radio" name="numselector" data-clock-numselector="WithNum" checked><br>
+                There will be no numbers <input type="radio" name="numselector" data-clock-numselector="WithoutNum"><br>
+            </p>
             <h4>Select Color for Hour:</h4>
             <input type="color" id="colorforhour"> <button onclick="fun1()">Reset</button>
 
@@ -33,23 +35,31 @@
             <input type="color" id="colorforsecond"> <button onclick="fun3()">Reset</button>
             
             <h4>Select Size for Hour:</h4>
-            <p id="p1">Normal : </p><input type="range" id="sizeforhour" step="1" max="4" min="1" value="2"> <button onclick="fun4()">Reset</button>
+            <p id="p1">Normal : </p><input type="range" id="sizeforhour" step="1" max="4" min="1" value="2"> 
+            <button onclick="fun4()">Reset</button>
 
             <h4>Select Size for Minute:</h4>
-            <p id="p2">Normal : </p><input type="range" id="sizeforminute" step="1" max="4" min="1" value="2"> <button onclick="fun5()">Reset</button>
+            <p id="p2">Normal : </p><input type="range" id="sizeforminute" step="1" max="4" min="1" value="2"> 
+            <button onclick="fun5()">Reset</button>
 
             <h4>Select Size for Second:</h4>
-            <p id="p3">Normal : </p><input type="range" id="sizeforsecond" step="1" max="4" min="1" value="2"> <button onclick="fun6()">Reset</button>
+            <p id="p3">Normal : </p><input type="range" id="sizeforsecond" step="1" max="4" min="1" value="2"> 
+            <button onclick="fun6()">Reset</button>
 
+            <h4>Extra Settings</h4>
+            Seconds Hour: <input type="checkbox" id="secondshow" checked><br>
+            <br>
+            Title : <input type="text" id="titlee" value="New Clock" placeholder="Clock title(See the title of window)">
 
-
+            <br><button onclick="newWindow()">Start New Window</button>
 
         </div>
-        <div class="clockpreview">
+        <div class="clockpreview" id="clockpre">
             <div class="hours" id="hours"></div>
             <div class="minutes" id="minutes"></div>
             <div class="seconds" id="seconds"></div>
         </div>
+        
     </div>
     
     <script src="./mainscript.js"></script>

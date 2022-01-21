@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-:root{
-    --startH: 0deg;
-    --endH: 360deg;
-    --startM: 0deg;
-    --endM: 360deg;
-    --startS: 0deg;
-    --endS: 360deg;
-}
-
 div.main{
     display: grid;
     grid-template-columns: 50% 50%;
