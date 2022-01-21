@@ -9,10 +9,9 @@ This is the full custumization clock. You can change the height of arms and colo
 
 - [@TanishqDutt](https://github.com/TanishqDutt)
 
-
 ## Demo
 
 ![Logo](https://raw.githubusercontent.com/TanishqDutt/clock/main/Assets/Clock_WithNum_Black_Square.png?token=GHSAT0AAAAAABQYLMS32HFKULEYMSTN6HCSYPJCRNQ)
 
-### Note : 
+### Note
     It still in devlopment. So kindly dont use it
